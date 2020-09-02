@@ -17,10 +17,9 @@ Obs.: Salário Bruto - Descontos = Salário Líquido.
 valor_hora = float(input("Quanto você ganha por hora? "))
 n_horas = float(input("Quantas horas trabalha no mês? "))
 salario_bruto = valor_hora * n_horas
-ir = (salario_bruto * 11) / 100
-inss = (salario_bruto * 8) / 100
-sindicato = (salario_bruto * 5) / 100
-
+ir = salario_bruto * 0.11
+inss = salario_bruto * 0.08
+sindicato = salario_bruto * 0.05
 salario_liquido = salario_bruto - ir - inss - sindicato
 
 print(f"Salário Bruto: R$ {salario_bruto:.2f}\nIR (11%): R$ {ir:.2f}\nINSS (8%): R$ {inss:.2f}\nSindicato (5%): R$ {sindicato:.2f}\nSalário Liquido: R$ {salario_liquido:.2f}")
